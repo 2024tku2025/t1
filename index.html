@@ -2,29 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<title>新項目</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	
-	<!-- Made with Construct, the game and app creator :: https://www.construct.net -->
-	<meta name="generator" content="Scirra Construct">
+    <title>新項目</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    
+    <!-- Made with Construct, the game and app creator :: https://www.construct.net -->
+    <meta name="generator" content="Scirra Construct">
 
+    <!-- 修正以下路徑，加上 /t1 -->
+    <link rel="manifest" href="/t1/appmanifest.json">
+    <link rel="apple-touch-icon" sizes="128x128" href="/t1/icons/icon-128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="/t1/icons/icon-256.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/t1/icons/icon-512.png">
+    <link rel="icon" type="image/png" href="/t1/icons/icon-512.png">
 
-
-	<link rel="manifest" href="appmanifest.json">
-	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
-	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
-	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
-	<link rel="icon" type="image/png" href="icons/icon-512.png">
-
-	<link rel="stylesheet" href="style.css">
-
-
-
+    <link rel="stylesheet" href="/t1/style.css">
 </head> 
  
 <body>
-
-	
 
 <script>
 if (location.protocol.substr(0, 4) === "file")
@@ -33,17 +27,19 @@ if (location.protocol.substr(0, 4) === "file")
 }
 </script>
 	
-	<noscript>
-		<div id="notSupportedWrap">
-			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
-			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
-		</div>
-	</noscript>
-	<script src="/t1/scripts/modernjscheck.js"></script>
-	<script src="/t1/scripts/supportcheck.js"></script>
-	<script src="/t1/scripts/offlineclient.js" type="module"></script>
-	<script src="/t1/scripts/main.js" type="module"></script>
-	<script src="/t1/scripts/register-sw.js" type="module"></script>
+<noscript>
+    <div id="notSupportedWrap">
+        <h2 id="notSupportedTitle">This content requires JavaScript</h2>
+        <p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+    </div>
+</noscript>
+
+<!-- 修正以下 script 路徑，加上 /t1 -->
+<script src="/t1/scripts/modernjscheck.js"></script>
+<script src="/t1/scripts/supportcheck.js"></script>
+<script src="/t1/scripts/offlineclient.js" type="module"></script>
+<script src="/t1/scripts/main.js" type="module"></script>
+<script src="/t1/scripts/register-sw.js" type="module"></script>
 
 </body> 
 </html>
